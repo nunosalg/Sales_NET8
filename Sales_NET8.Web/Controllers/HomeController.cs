@@ -13,12 +13,26 @@ namespace Sales_NET8.Web.Controllers
             _logger = logger;
         }
 
+        
         public IActionResult Index()
         {
             return View();
         }
 
+        [Route("Privacidade")]
         public IActionResult Privacy()
+        {
+            return View();
+        }
+
+        [Route("Sobre")]
+        public IActionResult About()
+        {
+            return View();
+        }
+
+        [Route("Contacto")]
+        public IActionResult Contact()
         {
             return View();
         }
