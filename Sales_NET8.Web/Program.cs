@@ -13,6 +13,9 @@ namespace Sales_NET8.Web
             builder.Services.AddControllersWithViews();
             builder.Services.AddDbContext<DataContext>(x => x.UseSqlServer("name=LocalConnection"));
 
+            //Add runtime compilation
+            builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
